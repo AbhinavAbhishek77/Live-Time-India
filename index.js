@@ -1,3 +1,5 @@
+
+
 function updateClock(){
     var now = new Date();
     var dname = now.getDay(),
@@ -28,7 +30,9 @@ function updateClock(){
 
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+    
+    // Updated ID names
+    var ids = ["weekday", "month-name", "date-number", "full-year", "hours", "mins", "secs", "ampm"];
     var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
 
     for (var i = 0; i < ids.length; i++) {
@@ -38,7 +42,7 @@ function updateClock(){
 
 function initClock(){
     updateClock();
-    window.setInterval(updateClock, 1000);  // Corrected to 1000ms for a 1-second interval
+    window.setInterval(updateClock, 1000);  // 1-second interval
 }
 
 // Ensure the clock is initialized after the page has fully loaded
