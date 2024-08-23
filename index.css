@@ -1,0 +1,59 @@
+/* time */
+
+
+.DT{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.datetime{
+	padding: 15px 10px;
+	border: 3px solid #2e95e3;
+	border-radius: 5px;
+	width: 60%;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,rgba(255,255,255,0.1));
+	background-color: #212121;
+	transition: 0.5s;
+	transition-property: all;
+    
+}
+.datetime:hover{
+	background: #022f51;
+	box-shadow: 0 0 30px #2e94e3;
+}
+.date{
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 3px;
+	color: white;
+	text-transform: uppercase;
+}
+.time{
+	font-size: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.date span, .time span{
+	color: white;
+}
+.time span:not(:last-child){
+	position: relative;
+	margin: 0 6px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 3px;
+}
+.time span:last-child{
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 10px;
+	padding: 0 5px;
+	border-radius: 3px;
+	background-color: #053960;
+	color: white;
+	
+}
